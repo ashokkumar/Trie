@@ -25,3 +25,11 @@ case class Trie(roots: List[Node]) {
         }        
     }
 }
+
+
+val roots = List(Node('a', List.empty[Node]))
+
+Trie(roots).add("apple")
+Trie(roots).add("awesome")
+
+roots.head
